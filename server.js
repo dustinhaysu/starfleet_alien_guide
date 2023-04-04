@@ -4,7 +4,7 @@ const cors = require('cors');
 const PORT = 3000;
 
 app.use(cors())
-
+// aliens object will be going into the data base
 const aliens = {
     'humans': {
         'speciesName' : 'Humans',
@@ -67,7 +67,7 @@ const aliens = {
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
-})
+}) 
 
 app.get('/api/:alienName', (req, res) => {
     const alienName = req.params.alienName.toLowerCase();
