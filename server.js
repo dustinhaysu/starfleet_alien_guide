@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const PORT = 3000;
+const MongoClient = require('mongodb');
 
 app.use(cors())
 // aliens object will be going into the data base
