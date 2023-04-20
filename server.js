@@ -72,7 +72,7 @@ app.use(express.json())
 MongoClient.connect(connectionString, {useUnifiedTopology: true, useNewUrlParser: true})
     .then(client => {
         console.log('Connected to Database')
-        const db = client.db('star-trek-alienshero')
+        const db = client.db('star-trek-aliens')
         const infoCollection = db.collection('alien-info')
     
 
